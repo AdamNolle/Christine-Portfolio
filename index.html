@@ -1,61 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christine Nolle - Counseling</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Christine Nolle, LCSW — Warm Online Therapy</title>
+  <meta name="description" content="Christine Nolle is a Licensed Clinical Social Worker offering warm, non-judgmental online therapy for anxiety, depression, OCD, grief and more — telehealth across seven states. You’re welcome here." />
+  <link rel="canonical" href="https://christinenolle.com/" />
+  <meta name="theme-color" content="#3b5577" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Christine Nolle, LCSW — Warm Online Therapy" />
+  <meta property="og:description" content="Warm, non-judgmental online therapy for anxiety, depression, OCD, grief and more. Telehealth across seven states." />
+  <meta property="og:url" content="https://christinenolle.com/" />
+  <meta property="og:site_name" content="Christine Nolle, LCSW" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://christinenolle.com/assets/img/christine-portrait.jpg" />
+  <meta property="og:image:width" content="320" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:image:alt" content="Christine Nolle, Licensed Clinical Social Worker" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Christine Nolle, LCSW — Warm Online Therapy" />
+  <meta name="twitter:description" content="Warm, non-judgmental online therapy across seven states." />
+  <meta name="twitter:image" content="https://christinenolle.com/assets/img/christine-portrait.jpg" />
+
+  <!-- Favicon (on-brand diamond) -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon.svg" sizes="any" />
+
+  <!-- Preload the two above-the-fold font faces (self-hosted, subset) -->
+  <link rel="preload" href="assets/fonts/cormorant-garamond-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/spectral-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!--
+    JSON-LD: when the real Rula Health and Psychology Today profile URLs are known,
+    add them to a "sameAs": ["...", "..."] array inside the object below.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "ProfessionalService"],
+    "name": "Christine Nolle, LCSW",
+    "description": "Warm, non-judgmental online therapy for anxiety, depression, OCD, substance use, grief, stress and relationships. Telehealth across seven states.",
+    "url": "https://christinenolle.com/",
+    "image": "https://christinenolle.com/assets/img/christine-portrait.jpg",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "State", "name": "Missouri" },
+      { "@type": "State", "name": "Illinois" },
+      { "@type": "State", "name": "Indiana" },
+      { "@type": "State", "name": "Kentucky" },
+      { "@type": "State", "name": "Maine" },
+      { "@type": "State", "name": "North Dakota" },
+      { "@type": "State", "name": "Florida" }
+    ],
+    "knowsAbout": ["Anxiety", "Depression", "OCD", "Substance use", "Grief and loss", "Stress and burnout", "Relationships"],
+    "availableService": {
+      "@type": "MedicalTherapy",
+      "name": "Online psychotherapy (telehealth)"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Christine Nolle",
+      "jobTitle": "Licensed Clinical Social Worker",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "license",
+        "name": "LCSW — Licensed Clinical Social Worker"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="intro">
-      <h1>Hi! I’m Christine <br> nice to meet you.</h1>
-      <p>
-        My counseling style is warm and non-judgmental. I integrate kindness and I believe in treating others with respect, sensitivity, and compassion, and I don’t believe in stigmatizing labels.
-      </p>
-      <p>
-        My approach combines client-centered therapy and cognitive behavioral therapy. In addition to working with an approach to focus on strengths that you have. We will identify them together and use them to create what you want and need in your life.
-      </p>
-    </div>
-    <div class="profile-pic">
-      <img src="Christine Nolle.jpeg" alt="Christine Nolle">
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reusable sparkle glyph (decorative) -->
+  <svg width="0" height="0" class="svg-defs" aria-hidden="true" focusable="false">
+    <symbol id="sparkle" viewBox="0 0 24 24">
+      <path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z" fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Christine Nolle, LCSW — home">
+        <span class="diamond" style="--ds:10px;color:var(--blue)" aria-hidden="true"></span>
+        <span class="brand__name">Christine&nbsp;Nolle</span>
+        <span class="brand__cred eyebrow">LCSW</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#help">How I Help</a></li>
+        <li><a href="#states">States</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="help-section">
-    <h2>How can I help you?</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Depression</h3>
-        <p>Through understanding, compassion, and evidence-based techniques, I will help you uncover strengths, develop coping strategies, and work toward a brighter, more fulfilling future. You can find a path to healing and renewed hope.</p>
-      </div>
-      <div class="service-card">
-        <h3>Anxiety</h3>
-        <p>Through compassionate guidance and proven techniques, they work with you to reframe worries, build resilience, and find peace in the present moment. Break free from the cycle of fear and rediscover balance in your life.</p>
-      </div>
-      <div class="service-card">
-        <h3>OCD</h3>
-        <p>Using evidence-based methods like exposure and response prevention (ERP), they help you break the cycle of anxiety and reclaim control over your life. Work toward reducing the grip of OCD and building a more fulfilling, peaceful future.</p>
-      </div>
-      <div class="service-card">
-        <h3>Substance Abuse</h3>
-        <p>Helping you uncover the root causes and develop healthier coping strategies. Through evidence-based approaches and personalized support, they guide you toward breaking free from addiction and building a life grounded in recovery and purpose.</p>
-      </div>
-    </div>
-  </section>
+  <main id="main" tabindex="-1">
 
-  <section class="licenses">
-    <h2>LCSW Licenses</h2>
-    <p>The states that I am able to serve you:</p>
-    <div class="license-grid">
-      <div>Florida</div>
-      <div>Illinois</div>
-      <div>Indiana</div>
-      <div>Kentucky</div>
-      <div>Maine</div>
-      <div>Missouri</div>
-      <div>North Dakota</div>
+    <!-- ───────────────── Hero ───────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 id="hero-title" class="hero__title display">
+            Come&nbsp;in,<br />
+            <span class="ital deep">take a seat,</span><br />
+            <span class="ital mul">tell me</span> everything.
+          </h1>
+          <p class="hero__lead">
+            Hi, I’m Christine. I’m a Licensed Clinical Social Worker, and I’ve spent years sitting
+            with people through hard, ordinary, and quietly wonderful moments. Whatever brings you
+            here, you’re welcome.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#begin">
+              Book a first session
+              <span class="diamond" style="--ds:6px;color:var(--paper)" aria-hidden="true"></span>
+            </a>
+            <a class="btn-link" href="#begin">or reach out</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <span class="spark spark--tl" aria-hidden="true">
+            <svg class="sparkle" style="--ss:20px;color:var(--honey)" aria-hidden="true" focusable="false"><use href="#sparkle" /></svg>
+            <span class="diamond" style="--ds:9px;color:var(--blue)"></span>
+          </span>
+
+          <figure class="polaroid">
+            <div class="polaroid__photo">
+              <img src="assets/img/christine-portrait.jpg" width="320" height="400"
+                   alt="Christine Nolle, Licensed Clinical Social Worker"
+                   fetchpriority="high" decoding="async" />
+            </div>
+            <figcaption class="polaroid__cap">
+              <span class="hand polaroid__name">Christine</span>
+              <span class="eyebrow polaroid__role">Licensed Clinical Social Worker</span>
+            </figcaption>
+          </figure>
+
+          <svg class="sparkle spark--br" style="--ss:18px;color:var(--mulberry)" aria-hidden="true" focusable="false"><use href="#sparkle" /></svg>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="trust">
+          <li class="trust__item">
+            <span class="trust__big display">7</span>
+            <span class="trust__small eyebrow">States licensed</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__big display">LCSW</span>
+            <span class="trust__small eyebrow">Licensed Clinical Social Worker</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__big display">Online</span>
+            <span class="trust__small eyebrow">Sessions, secure video</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────────── About ───────────────── -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="seam" aria-hidden="true">
+          <span class="seam__line"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:9px;color:var(--mulberry)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="seam__line"></span>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__head">
+            <p class="eyebrow eyebrow--mul">A little about me</p>
+            <h2 id="about-title" class="section-title display">
+              We’ll go at the <em class="deep">pace you need.</em>
+            </h2>
+          </div>
+          <div class="about__body">
+            <p>
+              I’ve worked in inpatient psychiatric hospitals, in individual and group therapy, and
+              even inside the insurance industry — which means I’ve seen this work from a lot of
+              angles. What’s stayed constant is the belief that people heal in relationships where
+              they feel safe, heard, and treated with respect.
+            </p>
+            <p>
+              Some weeks we’ll laugh, some weeks we won’t. Some weeks we’ll just sit and untangle
+              one small thing. Whatever you bring, I’ll meet it with care.
+            </p>
+            <p class="signature">
+              <span class="diamond" style="--ds:8px;color:var(--mulberry)" aria-hidden="true"></span>
+              <span class="hand">— Christine</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── Approach (dark) ───────────────── -->
+    <section id="approach" class="approach field-white" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow--honey approach__kicker">
+            <span class="diamond" style="--ds:8px;color:var(--honey-bright)" aria-hidden="true"></span>
+            How we’ll work together
+            <span class="diamond" style="--ds:8px;color:var(--honey-bright)" aria-hidden="true"></span>
+          </p>
+          <h2 id="approach-title" class="section-title section-title--xl display on-dark">
+            Steady, kind, and <em class="honey-em">truly yours.</em>
+          </h2>
+          <p class="section-intro on-dark-soft">
+            Three pieces I bring to every session — woven together, never rigid, always in service
+            of what you actually need.
+          </p>
+        </div>
+
+        <div class="approach__grid">
+          <article class="appcard">
+            <div class="appcard__top">
+              <span class="appcard__mark" aria-hidden="true">
+                <span class="diamond" style="--ds:30px;color:var(--honey)"></span>
+                <span class="appcard__roman">I</span>
+              </span>
+              <span class="eyebrow eyebrow--honey">Chapter I</span>
+            </div>
+            <h3 class="appcard__title display">Client-Centered Therapy</h3>
+            <p class="appcard__body">
+              You are the expert on your own life. My job is to listen carefully, hold space without
+              judgment, and trust the wisdom you bring into the room.
+            </p>
+          </article>
+
+          <article class="appcard">
+            <div class="appcard__top">
+              <span class="appcard__mark" aria-hidden="true">
+                <span class="diamond" style="--ds:30px;color:var(--honey)"></span>
+                <span class="appcard__roman">II</span>
+              </span>
+              <span class="eyebrow eyebrow--honey">Chapter II</span>
+            </div>
+            <h3 class="appcard__title display">Cognitive Behavioral Therapy (CBT)</h3>
+            <p class="appcard__body">
+              When the same thoughts keep looping, CBT gives us a quiet, practical way to step
+              outside them — to notice, question, and try something different.
+            </p>
+          </article>
+
+          <article class="appcard">
+            <div class="appcard__top">
+              <span class="appcard__mark" aria-hidden="true">
+                <span class="diamond" style="--ds:30px;color:var(--honey)"></span>
+                <span class="appcard__roman">III</span>
+              </span>
+              <span class="eyebrow eyebrow--honey">Chapter III</span>
+            </div>
+            <h3 class="appcard__title display">A Strengths-Based Lens</h3>
+            <p class="appcard__body">
+              I believe you already carry what you need. Together we’ll find those strengths, dust
+              them off, and use them to build the life you actually want.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── Pull quote ───────────────── -->
+    <section class="pullquote field-ink" aria-label="In Christine’s words">
+      <div class="container pullquote__inner">
+        <p class="drow" aria-hidden="true">
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:10px;color:var(--mulberry)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+        </p>
+        <blockquote class="pullquote__text display">
+          “My counseling style is warm and non-judgmental. I integrate kindness into every session,
+          and I don’t believe in stigmatizing labels. You’ll be treated with respect, sensitivity,
+          and compassion — every time.”
+        </blockquote>
+        <p class="pullquote__attr">
+          <span class="hand mul-hand">Christine</span>
+          <span class="eyebrow">LCSW · in her own words</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ───────────────── Specialties ───────────────── -->
+    <section id="help" class="specialties" aria-labelledby="help-title">
+      <div class="container">
+        <div class="specialties__head">
+          <div>
+            <p class="eyebrow eyebrow--mul">How I help</p>
+            <h2 id="help-title" class="section-title section-title--xl display">
+              Whatever brings you in,<br /><em class="deep">you’re welcome here.</em>
+            </h2>
+          </div>
+          <p class="specialties__intro">
+            You don’t need to know which of these fits — only that something feels worth tending.
+            We’ll find the words together.
+          </p>
+        </div>
+
+        <div class="specialties__grid">
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--blue)" aria-hidden="true"></span>
+              <span class="spec__num display">01</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">Anxiety</h3>
+              <p class="spec__blurb">
+                We’ll slow things down together — name what your worry is doing, and find practical
+                ways to soften its grip. You don’t have to keep bracing.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--mulberry)" aria-hidden="true"></span>
+              <span class="spec__num display">02</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">Depression</h3>
+              <p class="spec__blurb">
+                When everything feels heavy, even small things count. We’ll work gently — with
+                kindness, evidence-based tools, and your own strengths leading the way.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--blue-deep)" aria-hidden="true"></span>
+              <span class="spec__num display">03</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">OCD</h3>
+              <p class="spec__blurb">
+                I use exposure and response prevention (ERP) and CBT to help you step out of the
+                loop, one careful experiment at a time, at a pace that feels human.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--honey)" aria-hidden="true"></span>
+              <span class="spec__num display">04</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">Substance Use</h3>
+              <p class="spec__blurb">
+                Without judgment, we’ll look at what’s underneath — what helps, what hurts, and what
+                you actually want your life to feel like. Recovery is yours to shape.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--blue)" aria-hidden="true"></span>
+              <span class="spec__num display">05</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">Grief &amp; Loss</h3>
+              <p class="spec__blurb">
+                Grief doesn’t move in a straight line. I’ll sit with you in it — honoring who and
+                what you’ve lost while we make room for living again.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--mulberry)" aria-hidden="true"></span>
+              <span class="spec__num display">06</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">Stress &amp; Burnout</h3>
+              <p class="spec__blurb">
+                When you’re stretched thin, we’ll look at the load you’re carrying and find what can
+                be set down, redistributed, or simply tended to with more care.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec">
+            <div class="spec__index">
+              <span class="diamond" style="--ds:14px;color:var(--blue-deep)" aria-hidden="true"></span>
+              <span class="spec__num display">07</span>
+            </div>
+            <div>
+              <h3 class="spec__title display">Relationships</h3>
+              <p class="spec__blurb">
+                Family, partners, friendships, work — relationships shape almost everything. We’ll
+                work on what feels stuck, and on what feels worth tending.
+              </p>
+            </div>
+          </article>
+
+          <article class="spec spec--more field-white">
+            <div class="spec--more__inner">
+              <svg class="sparkle" style="--ss:22px;color:var(--honey-bright)" aria-hidden="true" focusable="false"><use href="#sparkle" /></svg>
+              <h3 class="spec__title display on-dark">And the rest.</h3>
+              <p class="spec__blurb on-dark-soft">
+                If what you’re carrying isn’t on this list, that’s okay. Reach out anyway — I’d
+                rather hear from you than have you wonder.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── States ───────────────── -->
+    <section id="states" class="states" aria-labelledby="states-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow--mul">Where I see you</p>
+          <h2 id="states-title" class="section-title display">
+            Online, across <em class="deep">seven states.</em>
+          </h2>
+          <p class="section-intro">
+            All sessions are secure video. Wherever you feel most yourself — your favorite chair,
+            the kitchen table, your car at lunch — is the right place to meet.
+          </p>
+        </div>
+
+        <ul class="states__grid">
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--blue)" aria-hidden="true"></span><span class="statecard__name display">Missouri</span><span class="statecard__no eyebrow">No. 01</span></li>
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--mulberry)" aria-hidden="true"></span><span class="statecard__name display">Illinois</span><span class="statecard__no eyebrow">No. 02</span></li>
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--blue)" aria-hidden="true"></span><span class="statecard__name display">Indiana</span><span class="statecard__no eyebrow">No. 03</span></li>
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--mulberry)" aria-hidden="true"></span><span class="statecard__name display">Kentucky</span><span class="statecard__no eyebrow">No. 04</span></li>
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--blue)" aria-hidden="true"></span><span class="statecard__name display">Maine</span><span class="statecard__no eyebrow">No. 05</span></li>
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--mulberry)" aria-hidden="true"></span><span class="statecard__name display">North Dakota</span><span class="statecard__no eyebrow">No. 06</span></li>
+          <li class="statecard"><span class="diamond" style="--ds:8px;color:var(--blue)" aria-hidden="true"></span><span class="statecard__name display">Florida</span><span class="statecard__no eyebrow">No. 07</span></li>
+        </ul>
+
+        <p class="states__more"><span class="hand">and more, soon ✦</span></p>
+      </div>
+    </section>
+
+    <!-- ───────────────── Begin / Contact ───────────────── -->
+    <!--
+      ╔══════════════════════════════════════════════════════════════════╗
+      ║  PLACEHOLDERS TO REPLACE BEFORE LAUNCH                             ║
+      ║  1. Rula Health link  →  search "RULA-LINK"                         ║
+      ║  2. Psychology Today link  →  search "PSYCH-TODAY-LINK"             ║
+      ║  3. Email address  →  search "EMAIL-PLACEHOLDER"                    ║
+      ║  4. (Optional) phone  →  search "PHONE-PLACEHOLDER" and un-comment  ║
+      ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <section id="begin" class="begin" aria-labelledby="begin-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="drow" aria-hidden="true">
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:10px;color:var(--mulberry)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+            <span class="diamond" style="--ds:6px;color:var(--blue)"></span>
+          </p>
+          <p class="eyebrow eyebrow--mul">Begin · A note from me</p>
+          <h2 id="begin-title" class="section-title section-title--xl display">
+            Take the <em class="deep">first small step.</em>
+          </h2>
+          <p class="section-intro">
+            Reaching out is often the hardest part. A few words is enough — really. I read everything
+            that comes in.
+          </p>
+        </div>
+
+        <div class="platforms">
+          <!-- RULA-LINK: replace href with the real Rula Health profile URL -->
+          <a class="platform" href="https://www.rula.com/" target="_blank" rel="noopener">
+            <span class="platform__corner" aria-hidden="true">
+              <span class="diamond" style="--ds:7px;color:var(--blue)"></span>
+              <span class="diamond" style="--ds:10px;color:var(--mulberry)"></span>
+            </span>
+            <span class="eyebrow platform__kicker">Platform · 01</span>
+            <span class="platform__name display">Rula Health</span>
+            <span class="platform__desc">Book a session, check insurance, message me — all in one place.</span>
+            <span class="platform__cta eyebrow">Book through Rula <span aria-hidden="true" class="arrow">→</span></span>
+          </a>
+
+          <!-- PSYCH-TODAY-LINK: replace href with the real Psychology Today profile URL -->
+          <a class="platform" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">
+            <span class="platform__corner" aria-hidden="true">
+              <span class="diamond" style="--ds:7px;color:var(--blue)"></span>
+              <span class="diamond" style="--ds:10px;color:var(--mulberry)"></span>
+            </span>
+            <span class="eyebrow platform__kicker">Platform · 02</span>
+            <span class="platform__name display">Psychology Today</span>
+            <span class="platform__desc">My verified profile with full details and an email contact form.</span>
+            <span class="platform__cta eyebrow">View profile <span aria-hidden="true" class="arrow">→</span></span>
+          </a>
+        </div>
+
+        <div class="contact field-white">
+          <p class="contact__hand"><span class="hand">Or, the old fashioned way —</span></p>
+
+          <div class="contact__item">
+            <span class="eyebrow contact__label">Email</span>
+            <!-- EMAIL-PLACEHOLDER: replace with the real intake email (here and in href) -->
+            <a class="contact__value display" href="mailto:hello@christinenolle.com">hello@christinenolle.com</a>
+          </div>
+
+          <div class="contact__item">
+            <span class="eyebrow contact__label">In a crisis</span>
+            <a class="contact__value display" href="tel:988">Call or text 988</a>
+            <span class="contact__note">Free, confidential, 24/7 — the Suicide &amp; Crisis Lifeline.</span>
+          </div>
+
+          <!--
+            PHONE-PLACEHOLDER: no verified phone number yet. When you have one, un-comment
+            this block and fill in both the tel: href (digits only, e.g. tel:+13145551234)
+            and the displayed number.
+          <div class="contact__item">
+            <span class="eyebrow contact__label">Call</span>
+            <a class="contact__value display" href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="diamond" style="--ds:10px;color:var(--blue)" aria-hidden="true"></span>
+        <span>
+          <span class="site-footer__name display">Christine Nolle, LCSW</span>
+          <span class="site-footer__sub eyebrow">Online therapy · telehealth</span>
+        </span>
+      </div>
+      <p class="site-footer__hand"><span class="hand">take good care of yourself.</span></p>
+      <p class="site-footer__legal eyebrow">© <span id="year">2026</span> · all rights reserved</p>
     </div>
-  </section>
+  </footer>
+
+  <script>
+    // The only script on the page: keep the footer year current. No framework, no tracking.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
